@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="computerRepairing.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="headFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Microsoft YaHei UI, 15.75pt</Value>
+    </Setting>
+    <Setting Name="contentFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Microsoft YaHei UI, 14.25pt</Value>
+    </Setting>
+    <Setting Name="connectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=HZ-ПК\;Initial Catalog=Iluha;Integrated Security=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
