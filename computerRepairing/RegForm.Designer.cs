@@ -37,8 +37,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.panelHeader = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelContent.SuspendLayout();
             this.panelHeader.SuspendLayout();
             this.SuspendLayout();
@@ -92,6 +92,7 @@
             this.btnReg.TabIndex = 5;
             this.btnReg.Text = "Регистрация";
             this.btnReg.UseVisualStyleBackColor = true;
+            this.btnReg.Click += new System.EventHandler(this.btnReg_Click);
             // 
             // textBoxPass
             // 
@@ -146,17 +147,6 @@
             this.panelHeader.Size = new System.Drawing.Size(284, 72);
             this.panelHeader.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::computerRepairing.Properties.Settings.Default, "headFont", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.label1.Font = global::computerRepairing.Properties.Settings.Default.headFont;
-            this.label1.Location = new System.Drawing.Point(109, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Регистрация";
-            // 
             // buttonBack
             // 
             this.buttonBack.FlatAppearance.BorderSize = 0;
@@ -170,6 +160,17 @@
             this.buttonBack.TabIndex = 2;
             this.buttonBack.UseVisualStyleBackColor = true;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::computerRepairing.Properties.Settings.Default, "headFont", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.label1.Font = global::computerRepairing.Properties.Settings.Default.headFont;
+            this.label1.Location = new System.Drawing.Point(109, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(143, 26);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Регистрация";
             // 
             // RegForm
             // 

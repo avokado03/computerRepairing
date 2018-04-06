@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddPositionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPositionForm.Designer.cs">
+      <DependentUpon>AddPositionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,18 @@
     <Compile Include="RegForm.Designer.cs">
       <DependentUpon>RegForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SuccessfullyRegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuccessfullyRegForm.Designer.cs">
+      <DependentUpon>SuccessfullyRegForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddPositionForm.resx">
+      <DependentUpon>AddPositionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectorMenuForm.resx">
+      <DependentUpon>DirectorMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +124,9 @@
     <EmbeddedResource Include="RegForm.resx">
       <DependentUpon>RegForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SuccessfullyRegForm.resx">
+      <DependentUpon>SuccessfullyRegForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -121,6 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="computer_network_14953.ico" />
+    <None Include="Resources\add148.png" />
     <None Include="Resources\back48.png" />
     <None Include="Resources\computer_network_14953.ico" />
     <None Include="Resources\shopping-cart-add128.png" />

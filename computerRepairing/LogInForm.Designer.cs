@@ -30,13 +30,13 @@
         {
             this.panelHeader = new System.Windows.Forms.Panel();
             this.buttonBack = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelContent = new System.Windows.Forms.Panel();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.textBoxReg = new System.Windows.Forms.TextBox();
+            this.textBoxPas = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxLogin = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelHeader.SuspendLayout();
             this.panelContent.SuspendLayout();
             this.SuspendLayout();
@@ -66,23 +66,12 @@
             this.buttonBack.UseVisualStyleBackColor = true;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::computerRepairing.Properties.Settings.Default, "headFont", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.label1.Font = global::computerRepairing.Properties.Settings.Default.headFont;
-            this.label1.Location = new System.Drawing.Point(103, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Вход в систему";
-            // 
             // panelContent
             // 
             this.panelContent.BackColor = System.Drawing.Color.White;
             this.panelContent.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelContent.Controls.Add(this.btnLogin);
-            this.panelContent.Controls.Add(this.textBoxReg);
+            this.panelContent.Controls.Add(this.textBoxPas);
             this.panelContent.Controls.Add(this.label3);
             this.panelContent.Controls.Add(this.label2);
             this.panelContent.Controls.Add(this.textBoxLogin);
@@ -103,16 +92,17 @@
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Войти";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // textBoxReg
+            // textBoxPas
             // 
-            this.textBoxReg.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBoxReg.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::computerRepairing.Properties.Settings.Default, "contentFont", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBoxReg.Font = global::computerRepairing.Properties.Settings.Default.contentFont;
-            this.textBoxReg.Location = new System.Drawing.Point(88, 62);
-            this.textBoxReg.Name = "textBoxReg";
-            this.textBoxReg.Size = new System.Drawing.Size(182, 32);
-            this.textBoxReg.TabIndex = 3;
+            this.textBoxPas.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.textBoxPas.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::computerRepairing.Properties.Settings.Default, "contentFont", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBoxPas.Font = global::computerRepairing.Properties.Settings.Default.contentFont;
+            this.textBoxPas.Location = new System.Drawing.Point(88, 62);
+            this.textBoxPas.Name = "textBoxPas";
+            this.textBoxPas.Size = new System.Drawing.Size(182, 32);
+            this.textBoxPas.TabIndex = 3;
             // 
             // label3
             // 
@@ -146,6 +136,17 @@
             this.textBoxLogin.Size = new System.Drawing.Size(182, 32);
             this.textBoxLogin.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::computerRepairing.Properties.Settings.Default, "headFont", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.label1.Font = global::computerRepairing.Properties.Settings.Default.headFont;
+            this.label1.Location = new System.Drawing.Point(103, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(169, 26);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Вход в систему";
+            // 
             // LogInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,7 +171,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelContent;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.TextBox textBoxReg;
+        private System.Windows.Forms.TextBox textBoxPas;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxLogin;

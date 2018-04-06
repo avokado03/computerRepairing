@@ -10,17 +10,15 @@ using System.Windows.Forms;
 
 namespace computerRepairing
 {
-    public partial class DirectorMenuForm : Form
+    public partial class SuccessfullyRegForm : Form
     {
-        public DirectorMenuForm()
+        public SuccessfullyRegForm()
         {
             InitializeComponent();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void buttonBack_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.roleUser = "";
-            Properties.Settings.Default.idUser = 0;
             LogInForm lf = new LogInForm();
             lf.Show();
             Close();

@@ -58,5 +58,29 @@ namespace computerRepairing.Properties {
                 this["connectionString"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string roleUser {
+            get {
+                return ((string)(this["roleUser"]));
+            }
+            set {
+                this["roleUser"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int idUser {
+            get {
+                return ((int)(this["idUser"]));
+            }
+            set {
+                this["idUser"] = value;
+            }
+        }
     }
 }
