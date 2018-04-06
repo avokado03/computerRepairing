@@ -233,6 +233,16 @@ namespace computerRepairing.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap edit48 {
+            get {
+                object obj = ResourceManager.GetObject("edit48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Event {
             get {
                 object obj = ResourceManager.GetObject("Event", resourceCulture);

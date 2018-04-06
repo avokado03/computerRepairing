@@ -67,6 +67,17 @@
     <Compile Include="DirectorMenuForm.Designer.cs">
       <DependentUpon>DirectorMenuForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditPositionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPositionForm.Designer.cs">
+      <DependentUpon>EditPositionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IluhaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IluhaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="LogInForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +116,9 @@
     <EmbeddedResource Include="DirectorMenuForm.resx">
       <DependentUpon>DirectorMenuForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditPositionForm.resx">
+      <DependentUpon>EditPositionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +141,17 @@
     <EmbeddedResource Include="SuccessfullyRegForm.resx">
       <DependentUpon>SuccessfullyRegForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="IluhaDataSet.xsc">
+      <DependentUpon>IluhaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IluhaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IluhaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IluhaDataSet.xss">
+      <DependentUpon>IluhaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -142,6 +167,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="computer_network_14953.ico" />
+    <None Include="Resources\edit48.png" />
     <None Include="Resources\add148.png" />
     <None Include="Resources\back48.png" />
     <None Include="Resources\computer_network_14953.ico" />

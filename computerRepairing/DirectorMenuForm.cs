@@ -25,5 +25,19 @@ namespace computerRepairing
             lf.Show();
             Close();
         }
+
+        private void btnAddPosition_Click(object sender, EventArgs e)
+        {
+            AddPositionForm apf = new AddPositionForm();
+            apf.Show();
+            Close();
+        }
+
+        private void btnEditPosition_Click(object sender, EventArgs e)
+        {
+            EditPositionForm epf = new EditPositionForm();
+            epf.Show();
+            Close();
+        }
     }
 }

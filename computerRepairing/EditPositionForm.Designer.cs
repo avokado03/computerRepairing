@@ -1,6 +1,6 @@
 ﻿namespace computerRepairing
 {
-    partial class AddPositionForm
+    partial class EditPositionForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.buttonBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panelContent = new System.Windows.Forms.Panel();
-            this.btnAdd = new System.Windows.Forms.Button();
+            this.comboBoxChoosePose = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnEdit = new System.Windows.Forms.Button();
             this.textBoxPricePos = new System.Windows.Forms.TextBox();
             this.textBoxDescPos = new System.Windows.Forms.TextBox();
             this.textBoxNamePos = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.iluhaDataSet = new computerRepairing.IluhaDataSet();
+            this.услугиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.услугиTableAdapter = new computerRepairing.IluhaDataSetTableAdapters.УслугиTableAdapter();
             this.panelHeader.SuspendLayout();
             this.panelContent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iluhaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.услугиBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -66,7 +74,6 @@
             this.buttonBack.Size = new System.Drawing.Size(77, 53);
             this.buttonBack.TabIndex = 3;
             this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // label1
             // 
@@ -75,15 +82,17 @@
             this.label1.Font = global::computerRepairing.Properties.Settings.Default.headFont;
             this.label1.Location = new System.Drawing.Point(199, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 26);
+            this.label1.Size = new System.Drawing.Size(237, 26);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Добавить услугу";
+            this.label1.Text = "Редактировать услугу";
             // 
             // panelContent
             // 
             this.panelContent.BackColor = System.Drawing.Color.White;
             this.panelContent.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelContent.Controls.Add(this.btnAdd);
+            this.panelContent.Controls.Add(this.comboBoxChoosePose);
+            this.panelContent.Controls.Add(this.label5);
+            this.panelContent.Controls.Add(this.btnEdit);
             this.panelContent.Controls.Add(this.textBoxPricePos);
             this.panelContent.Controls.Add(this.textBoxDescPos);
             this.panelContent.Controls.Add(this.textBoxNamePos);
@@ -95,26 +104,48 @@
             this.panelContent.Font = global::computerRepairing.Properties.Settings.Default.contentFont;
             this.panelContent.Location = new System.Drawing.Point(0, 77);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(584, 294);
+            this.panelContent.Size = new System.Drawing.Size(584, 363);
             this.panelContent.TabIndex = 1;
             // 
-            // btnAdd
+            // comboBoxChoosePose
             // 
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Image = global::computerRepairing.Properties.Resources.add148;
-            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAdd.Location = new System.Drawing.Point(14, 223);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(556, 57);
-            this.btnAdd.TabIndex = 6;
-            this.btnAdd.Text = "Добавить";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.comboBoxChoosePose.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.comboBoxChoosePose.DataSource = this.услугиBindingSource;
+            this.comboBoxChoosePose.DisplayMember = "Наименование";
+            this.comboBoxChoosePose.FormattingEnabled = true;
+            this.comboBoxChoosePose.Location = new System.Drawing.Point(202, 24);
+            this.comboBoxChoosePose.Name = "comboBoxChoosePose";
+            this.comboBoxChoosePose.Size = new System.Drawing.Size(368, 32);
+            this.comboBoxChoosePose.TabIndex = 8;
+            this.comboBoxChoosePose.ValueMember = "id_Услуги";
+            this.comboBoxChoosePose.SelectedIndexChanged += new System.EventHandler(this.comboBoxChoosePose_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(10, 24);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(169, 24);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Выберите услугу";
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Image = global::computerRepairing.Properties.Resources.edit48;
+            this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEdit.Location = new System.Drawing.Point(14, 285);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(556, 57);
+            this.btnEdit.TabIndex = 6;
+            this.btnEdit.Text = "Редактировать";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // textBoxPricePos
             // 
             this.textBoxPricePos.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBoxPricePos.Location = new System.Drawing.Point(202, 161);
+            this.textBoxPricePos.Location = new System.Drawing.Point(202, 223);
             this.textBoxPricePos.Name = "textBoxPricePos";
             this.textBoxPricePos.Size = new System.Drawing.Size(368, 32);
             this.textBoxPricePos.TabIndex = 5;
@@ -122,7 +153,7 @@
             // textBoxDescPos
             // 
             this.textBoxDescPos.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBoxDescPos.Location = new System.Drawing.Point(202, 90);
+            this.textBoxDescPos.Location = new System.Drawing.Point(202, 152);
             this.textBoxDescPos.MaxLength = 100;
             this.textBoxDescPos.Multiline = true;
             this.textBoxDescPos.Name = "textBoxDescPos";
@@ -132,7 +163,7 @@
             // textBoxNamePos
             // 
             this.textBoxNamePos.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBoxNamePos.Location = new System.Drawing.Point(202, 14);
+            this.textBoxNamePos.Location = new System.Drawing.Point(202, 76);
             this.textBoxNamePos.MaxLength = 100;
             this.textBoxNamePos.Multiline = true;
             this.textBoxNamePos.Name = "textBoxNamePos";
@@ -142,7 +173,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(67, 164);
+            this.label4.Location = new System.Drawing.Point(67, 226);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(112, 24);
             this.label4.TabIndex = 2;
@@ -151,7 +182,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 93);
+            this.label3.Location = new System.Drawing.Point(7, 155);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(172, 24);
             this.label3.TabIndex = 1;
@@ -160,26 +191,43 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 22);
+            this.label2.Location = new System.Drawing.Point(10, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(169, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Название услуги";
             // 
-            // AddPositionForm
+            // iluhaDataSet
+            // 
+            this.iluhaDataSet.DataSetName = "IluhaDataSet";
+            this.iluhaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // услугиBindingSource
+            // 
+            this.услугиBindingSource.DataMember = "Услуги";
+            this.услугиBindingSource.DataSource = this.iluhaDataSet;
+            // 
+            // услугиTableAdapter
+            // 
+            this.услугиTableAdapter.ClearBeforeFill = true;
+            // 
+            // EditPositionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 371);
+            this.ClientSize = new System.Drawing.Size(584, 440);
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.panelHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "AddPositionForm";
+            this.Name = "EditPositionForm";
             this.Text = "Добавить услугу";
+            this.Load += new System.EventHandler(this.EditPositionForm_Load);
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             this.panelContent.ResumeLayout(false);
             this.panelContent.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iluhaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.услугиBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -194,8 +242,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.TextBox textBoxPricePos;
         private System.Windows.Forms.TextBox textBoxDescPos;
+        private System.Windows.Forms.ComboBox comboBoxChoosePose;
+        private System.Windows.Forms.Label label5;
+        private IluhaDataSet iluhaDataSet;
+        private System.Windows.Forms.BindingSource услугиBindingSource;
+        private IluhaDataSetTableAdapters.УслугиTableAdapter услугиTableAdapter;
     }
 }
