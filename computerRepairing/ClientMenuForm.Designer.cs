@@ -109,6 +109,7 @@
             this.btnShowMyPositon.TabIndex = 8;
             this.btnShowMyPositon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnShowMyPositon.UseVisualStyleBackColor = true;
+            this.btnShowMyPositon.Click += new System.EventHandler(this.btnShowMyPositon_Click);
             // 
             // label1
             // 
@@ -162,7 +163,7 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ClientMenuForm";
-            this.Text = "ClientMenuForm";
+            this.Text = "Меню клиента";
             this.ResumeLayout(false);
             this.PerformLayout();
 

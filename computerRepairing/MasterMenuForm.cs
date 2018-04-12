@@ -16,5 +16,33 @@ namespace computerRepairing
         {
             InitializeComponent();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGetPosition_Click(object sender, EventArgs e)
+        {
+            GetPositionForm gpf = new GetPositionForm();
+            gpf.Show();
+            Close();
+        }
+
+        private void btnShowMyPositon_Click(object sender, EventArgs e)
+        {
+            ShowOrderMasterForm somf = new ShowOrderMasterForm();
+            somf.Show();
+            Close();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.roleUser = "";
+            Properties.Settings.Default.idUser = 0;
+            LogInForm lf = new LogInForm();
+            lf.Show();
+            Close();
+        }
     }
 }

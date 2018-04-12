@@ -39,5 +39,12 @@ namespace computerRepairing
             epf.Show();
             Close();
         }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            ReportForm rf = new ReportForm();
+            rf.Show();
+            Close();
+        }
     }
 }

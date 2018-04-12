@@ -39,5 +39,12 @@ namespace computerRepairing
             spf.Show();
             Close();
         }
+
+        private void btnShowMyPositon_Click(object sender, EventArgs e)
+        {
+            ShowPositionForm spf = new ShowPositionForm();
+            spf.Show();
+            Close();
+        }
     }
 }

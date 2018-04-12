@@ -79,6 +79,12 @@
     <Compile Include="EditPositionForm.Designer.cs">
       <DependentUpon>EditPositionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GetPositionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetPositionForm.Designer.cs">
+      <DependentUpon>GetPositionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="IluhaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -115,11 +121,23 @@
     <Compile Include="RegForm.Designer.cs">
       <DependentUpon>RegForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SetPositionForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SetPositionForm.Designer.cs">
       <DependentUpon>SetPositionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowOrderMasterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowOrderMasterForm.Designer.cs">
+      <DependentUpon>ShowOrderMasterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ShowPositionForm.cs">
       <SubType>Form</SubType>
@@ -148,11 +166,17 @@
     <EmbeddedResource Include="EditPositionForm.resx">
       <DependentUpon>EditPositionForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GetPositionForm.resx">
+      <DependentUpon>GetPositionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMenuForm.resx">
+      <DependentUpon>MasterMenuForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -167,8 +191,14 @@
     <EmbeddedResource Include="RegForm.resx">
       <DependentUpon>RegForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SetPositionForm.resx">
       <DependentUpon>SetPositionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowOrderMasterForm.resx">
+      <DependentUpon>ShowOrderMasterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ShowPositionForm.resx">
       <DependentUpon>ShowPositionForm.cs</DependentUpon>
@@ -213,6 +243,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="computer_network_14953.ico" />
+    <None Include="Resources\budget48.png" />
+    <None Include="Resources\item-configuration148.png" />
     <None Include="Resources\shopping-cart-accept48.png" />
     <None Include="Resources\edit48.png" />
     <None Include="Resources\add148.png" />

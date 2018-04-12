@@ -133,6 +133,16 @@ namespace computerRepairing.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap budget48 {
+            get {
+                object obj = ResourceManager.GetObject("budget48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chart128 {
             get {
                 object obj = ResourceManager.GetObject("chart128", resourceCulture);
@@ -276,6 +286,16 @@ namespace computerRepairing.Properties {
         internal static System.Drawing.Bitmap item_configuration1128 {
             get {
                 object obj = ResourceManager.GetObject("item_configuration1128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap item_configuration148 {
+            get {
+                object obj = ResourceManager.GetObject("item-configuration148", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
